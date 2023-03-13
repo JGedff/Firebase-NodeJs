@@ -1,0 +1,10 @@
+<h1>aloja</h1>
+
+{{#each post}}
+    <p> {{title}} </p>
+    <p><a href="/editPost/{{id}}">Edit</a></p>
+{{/each}}
+
+<form action="{{#if editPost.id}} /updatePost/{{editPost.id}} {{else}} /createPost {{/if}}" method="post">
+    <input type="text" name="title" id="title" placeholder="Title" value="{{editPost.title}}">
+</form>
