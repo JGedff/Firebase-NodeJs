@@ -20,5 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(require("./routes/index.js"));
 
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, "js")));
+app.use(express.static(path.join(__dirname, "css")));
 
 module.exports = app

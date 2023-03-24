@@ -1,0 +1,68 @@
+<a href="/">Go back</a>
+{{#each post}}
+<div class="post" id="postDescript">
+    <div class="flex">
+        <div>
+            <strong>{{userName}}</strong>
+            {{email}}
+        </div>
+        <div>
+            {{date}}
+            <strong>{{category}}</strong>
+        </div>
+    </div>
+    <div class="content">
+        <h3>{{title}}</h3>
+        <p>{{content}}</p>
+        <img class="image" src="{{media}}" alt="{{mediaAlt}}" onload="comunity()">
+    </div>
+    <div>
+        <div>
+            <div>
+                <img src="" alt="imgLikes">
+                {{likes}}
+            </div>
+            <div>
+                <img src="" alt="ImgDislikes">
+                {{dislikes}}
+            </div>
+            <div>
+                <img src="" alt="coments">
+                {{comments}}
+            </div>
+        </div>
+        <button onclick="copy('/publication/{{id}}');">
+            Share
+        </button>
+    </div>
+</div>
+{{/each}}
+{{#each comments}}
+<div>
+    <div class="coment">
+        <div class="flex">
+            <div>
+                <strong>{{userName}}</strong>
+                {{email}}
+            </div>
+            <div>
+                {{date}}
+            </div>
+        </div>
+        <div class="content">
+            <p>{{content}}</p>
+        <div>
+            <div>
+                <div>
+                    <img src="" alt="imgLikes">
+                    {{likes}}
+                </div>
+                <div>
+                    <img src="" alt="ImgDislikes">
+                    {{dislikes}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

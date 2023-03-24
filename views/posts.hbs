@@ -1,0 +1,40 @@
+{{#each post}}
+    <a href="/publication/{{id}}">
+        <div class="post">
+            <div class="flex">
+                <div>
+                    <strong>{{userName}}</strong>
+                    {{email}}
+                </div>
+                <div>
+                    {{date}}
+                    <strong>{{category}}</strong>
+                </div>
+            </div>
+            <div class="content">
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <img class="image" src="{{media}}" alt="{{mediaAlt}}">
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="" alt="imgLikes">
+                        {{likes}}
+                    </div>
+                    <div>
+                        <img src="" alt="ImgDislikes">
+                        {{dislikes}}
+                    </div>
+                    <div>
+                        <img src="" alt="coments">
+                        {{comments}}
+                    </div>
+                </div>
+                <button onclick="copy('/publication/{{id}}');">
+                    Share
+                </button>
+            </div>
+        </div>
+    </a>
+{{/each}}

@@ -7,7 +7,7 @@ const myRefreshToken = require('./firebaseKey.json'); // Get refresh token from 
 
 initializeApp({
   credential: cert(myRefreshToken),
-  databaseURL: 'https://pkmnut.firebaseio.com'
+  databaseURL: 'HTPS TO YOUR FIREBASE'
 });
 
 const db = getFirestore();
