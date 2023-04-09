@@ -18,6 +18,8 @@ To run the server you'll have to user the comand npm run start.
 
 # Before runing the service
 
+* The folde public is there without nothing, but if you delete that folder, nothing will work.
+
 * In your firebase storage, you'll have to create 4 folders:
   * css:
     * There, you'll have to put the css
