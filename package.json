@@ -1,5 +1,5 @@
 {
-  "name": "nodejs",
+  "name": "project-nodejs-firebase",
   "version": "1.0.0",
   "description": "Functional Web",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "install": "npm i dotenv express express-handlebars firebase-admin morgan nodemon",
     "start": "nodemon index.js"
   },
-  "author": "",
+  "author": "Jordi Marmi Martínez",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
