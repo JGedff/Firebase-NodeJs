@@ -1,11 +1,29 @@
 # Firebase-NodeJs
 
-Hello, this is a web made with NodeJs and express handlebars for its routing.
+Hello, this is a web made with HTML, CSS and JavaScript for the front-end and NodeJs and express handlebars for the server routing.
 
-For now, you just will be able to see the colectins 'posts' and 'coments' in the database firebase.
+In this release, as a unlogged user you can see all information of the Who are we, posts and comments.
+You'll have a search button to search between all the posts.
 
-You'll have to create a .json for de SDK from firebase and leave it in the same folder as .env and in the config.js you'll have to put the https to your firebase.
+As a logged user you can create, edit or delete you own posts and comments.
+You can also edit your user information or even delete your account.
+In your search button, you'll be able to search others users and see their information like name, email, comments made, publications made, likes acumulated, ...
 
-In the main.hbs you will have to link the CSS and the JavaScript from the folder toFirebaseSotage with the url that firebase gives you.
+As a super user you can create, edit or delete your own posts and comments.
+You can also see, edit or delete others posts, comments or profiles.
+Although, you can create, edit or delete categories and dates, that they are used to organize the posts.
 
-To install all packages you'll have to use the comand npm run install.
+To install all NodeJs packages you'll have to use the comand npm run install.
+To run the server you'll have to user the comand npm run start.
+
+# Before runing the service
+
+* In the layouts you'll find CSS TOCKEN and JAVASCRIPT TOCKEN. There, you'll have to put the css and the javascript url once you upload it into our firebase.
+
+* In the firebaseKey.json, you'll have to put there the firebase SDK information.
+
+* Also, in the config.js, you'll have to put your database URL and in the storageBucket, you'll have to put your firebase ID.
+
+* In a lot of documents, you'll see YOUR FIREBASE APP. You'll have to change that for your firebase ID
+
+* You'll also see some DEFAULT PROFILE IMAGE. The image or url of that image will be the image that all user will have if they don't put any image in the file input.
