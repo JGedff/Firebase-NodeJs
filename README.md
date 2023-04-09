@@ -18,6 +18,16 @@ To run the server you'll have to user the comand npm run start.
 
 # Before runing the service
 
+* In your firebase storage, you'll have to create 4 folders:
+  * css:
+    * There, you'll have to put the css
+  * scripts:
+    * There will be the javascript files
+  * postImg:
+    * There is where the images that people put in their posts will save
+  * profileImg:
+    * There is where the images that people put in their profile will save
+
 * In the layouts you'll find CSS TOCKEN and JAVASCRIPT TOCKEN. There, you'll have to put the css and the javascript url once you upload it into our firebase.
 
 * In the firebaseKey.json, you'll have to put there the firebase SDK information.
