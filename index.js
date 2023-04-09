@@ -1,5 +1,5 @@
 const app = require('./app')
 
 app.listen(3000, () => {
-    console.log("Works");
+    console.log("Let's rumble");
 });

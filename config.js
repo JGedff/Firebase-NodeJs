@@ -3,11 +3,12 @@ const { getFirestore } = require('firebase-admin/firestore');
 
 require('dotenv').config();
 
-const myRefreshToken = require('./firebaseKey.json'); // Get refresh token from OAuth2 flow
+const myRefreshToken = require('./firebaseKey.json');
 
 initializeApp({
   credential: cert(myRefreshToken),
-  databaseURL: 'HTPS TO YOUR FIREBASE'
+  databaseURL: '',
+  storageBucket: '.appspot.com'
 });
 
 const db = getFirestore();

@@ -1,0 +1,17 @@
+<p>Editting this collection could cause a <strong class="text-red">fatal error</strong>. Be carefull</p>
+{{#each dates}}
+<a href="/dates/admin/edit/{{id}}" class="btn btn-info m-1"> Edit {{day}}</a>
+<button onclick="showAlertDelete({{counter}})" class="btn btn-info m-1"> Delete {{day}} </button>
+<div id="alertDelete{{counter}}" class="alertDelete">
+    <p>Are you sure you want to <strong class="text-red">delete</strong> this date?</p>
+    <p>If you delete a date, all documents with that date will keep the date, but the searcher will not be able to find them.</p>
+    <a href="/dates/admin/delete/{{id}}" class="btn btn-danger m-1"> Yes </a>
+    <button onclick="hideAlertDelete({{counter}})" class="btn btn-success m-1"> No </button>
+</div>
+<div>
+    <p>Day: {{date}}</p>
+    <p>Publications with that date: {{times}}</p>
+    <p>Id: <strong>{{id}}</strong></p>
+</div>
+<hr>
+{{/each}}

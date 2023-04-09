@@ -1,21 +1,19 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Functional Web",
   "main": "index.js",
   "scripts": {
-    "install": "npm i dotenv express express-handlebars firebase firebase-admin morgan nodemon",
-    "dev": "nodemon index.js"
+    "install": "npm i dotenv express express-handlebars firebase-admin morgan nodemon",
+    "start": "nodemon index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.4",
-    "firebase": "^9.18.0",
-    "firebase-admin": "^11.5.0",
+    "firebase-admin": "^11.6.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22"
   }

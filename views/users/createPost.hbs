@@ -1,0 +1,41 @@
+<body onload="register()">
+    <div id="searcher">
+        <a href="/searchDashboard/{{user.id}}" class="btn btn-light m-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewbox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+            Search
+        </a>
+    </div>
+    <a href="/dashboard/{{user.id}}" class="btn rounded btn-light m-1" id="goBack">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewbox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"></path></svg>
+        Dashboard
+    </a>
+    <div class="d-flex justify-content-center">
+        <form action="/newPost/{{user.id}}/send" class="m-3 w-50">
+            <div class="form-group m-2">
+                <label for="title"> Write the title </label>
+                <input type="text" name="title" class="form-control" id="title" required="true"/>
+            </div>
+            <div class="form-group m-2">
+                <label for="category"> Select the category of the post</label>
+                <select name="category" class="form-control" id="category">
+                    {{#each cat}}
+                        <option value="{{name}}"> {{name}} </option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group m-2">
+                <label for="content"> Write the body of the post </label>
+                <input type="text" name="content" class="form-control" id="content" required="true"/>
+            </div>
+            <div class="form-group m-2">
+                <label for="media"> Select an image</label>
+                <input type="file" name="media" accept="image/png, image/gif, image/jpeg" class="form-control" id="media"/>
+            </div>
+            <div class="form-group m-2">
+                <label for="mediaAlt"> Write the Alt of the Image</label>
+                <input type="text" name="mediaAlt" class="form-control" id="mediaAlt"/>
+            </div>
+            <button type="submit" class="btn btn-primary m-2">Submit</button>
+        </form>
+    </div>
+</body>

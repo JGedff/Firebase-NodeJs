@@ -1,0 +1,22 @@
+<body>
+    <div class="d-flex justify-content-center">
+        <form action="/dates/admin/create/send" class="m-2 w-50">
+            <div class="mt-3">
+                <label for="date">Write a day</label>
+                <input type="text" name="date" id="date" class="form-control" required="true">
+            </div>
+            <div class="mt-3">
+                <label for="times">Write how many times is this day in other posts</label>
+                <input type="number" name="times" id="times" class="form-control" required="true">
+            </div>
+
+            <h4 class="mt-5">Optional</h4>
+
+            <div class="mt-3">
+                <label for="id">Write a new ID for the date</label>
+                <input type="text" name="id" id="id" class="form-control" >
+            </div>
+            <button type="submit" class="btn btn-success mt-3"> Create the date </button>
+        </form>
+    </div>
+</body>

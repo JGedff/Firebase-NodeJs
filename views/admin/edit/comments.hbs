@@ -1,0 +1,42 @@
+<body>
+    <div class="d-flex justify-content-center">
+        <form action="/comments/admin/update/{{doc.id}}" class="m-2 w-50">
+            <div class="mt-3">
+                <label for="content">Write the content of the comment</label>
+                <input type="text" name="content" id="content" class="form-control" placeholder="{{doc.placeholder}}">
+            </div>
+
+            <h4 class="mt-5">Edit this just in required moments</h4>
+
+            <div class="mt-3">
+                <label for="id">Write the id of the comment</label>
+                <input type="text" name="id" id="id" class="form-control" placeholder="{{doc.id}}">
+            </div>
+            <div class="mt-3">
+                <label for="post">Write the id of the post asociated</label>
+                <input type="text" name="post" id="post" class="form-control" placeholder="{{doc.post}}">
+            </div>
+            <div class="mt-3">
+                <label for="userId">Write the id of the user that made the comment</label>
+                <input type="text" name="userId" id="userId" class="form-control" placeholder="{{doc.userId}}">
+            </div>
+            <div class="mt-3">
+                <label for="userName">Write the user name of the user that made comment</label>
+                <input type="text" name="userName" id="userName" class="form-control" placeholder="{{doc.userName}}">
+            </div>
+            <div class="mt-3">
+                <label for="email">Write the email of the user that made the comment</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="{{doc.email}}">
+            </div>
+            <div class="mt-3">
+                <label for="lilkes">Write how many likes does the comment have</label>
+                <input type="number" name="likes" id="likes" class="form-control" placeholder="{{doc.likes}}">
+            </div>
+            <div class="mt-3">
+                <label for="dislikes">Write how many dislikes does the comment have</label>
+                <input type="number" name="dislikes" id="dislikes" class="form-control" placeholder="{{doc.dislikes}}">
+            </div>
+            <button type="submit" class="btn btn-info mt-3"> Update the comment </button>
+        </form>
+    </div>
+</body>

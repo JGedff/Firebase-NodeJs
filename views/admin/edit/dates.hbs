@@ -1,0 +1,22 @@
+<body>
+    <div class="d-flex justify-content-center">
+        <form action="/dates/admin/update/{{doc.id}}" class="m-2 w-50">
+            <div class="mt-3">
+                <label for="date">Write a day</label>
+                <input type="text" name="date" id="date" class="form-control" placeholder="{{doc.day}}">
+            </div>
+
+            <h4 class="mt-5">Only required moments</h4>
+
+            <div class="mt-3">
+                <label for="id">Write a new ID for the date</label>
+                <input type="text" name="id" id="id" class="form-control" placeholder="{{doc.id}}">
+            </div>
+            <div class="mt-3">
+                <label for="times">Write how many times is this day in other posts</label>
+                <input type="number" name="times" id="times" class="form-control" placeholder="{{doc.times}}">
+            </div>
+            <button type="submit" class="btn btn-info mt-3"> Update the date </button>
+        </form>
+    </div>
+</body>

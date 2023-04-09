@@ -27,8 +27,8 @@
             
             <div id="pages" class="ml-25 d-flex align-items-center">
                 <ul class="d-flex m-0 p-0 justify-content-around w-100">
-                    <li><a onclick="home();" id="linkHome">Home</a></li>
-                    <li><a onclick="comunity();" id="linkComunity">Comunity</a></li>
+                    <li id="linkHome"><a href="#">Home</a></li>
+                    <li id="linkComunity"><a href="#">Comunity</a></li>
                 </ul>
             </div>
         </div>
@@ -50,7 +50,7 @@
                         <label for="passwd">Write your password</label>
                         <input type="password" name="passwd" class="form-control" id="passwd">
                     </div>
-                    <button type="submit" class="btn btn-success m-2" id="login"> Log in </button>
+                    <button type="submit" class="btn btn-success m-2"> Log in </button>
                 </form>
                 <a href="/register" class="btn btn-light m-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-r-circle" viewbox="0 0 16 16"><path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.5 4.002h3.11c1.71 0 2.741.973 2.741 2.46 0 1.138-.667 1.94-1.495 2.24L11.5 12H9.98L8.52 8.924H6.836V12H5.5V4.002Zm1.335 1.09v2.777h1.549c.995 0 1.573-.463 1.573-1.36 0-.913-.596-1.417-1.537-1.417H6.835Z"></path></svg>
@@ -84,12 +84,15 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-sidebar-reverse" viewbox="0 0 16 16"><path d="M16 3a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3zm-5-1v12H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h9zm1 0h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-2V2z"></path></svg>
             SIDE BAR
         </button>
-        <div id="whoAreWe" class="mb-5">
-            <h1>WHO ARE WE?</h1>
-        </div>
+        <div id="comunity" class="m-2 mb-5">
+            <div class="d-flex align-items-center">
+                <h1 class="mr-15 text-red"> ERROR <strong class="text-white">404</strong> </h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="red" class="bi bi-heartbreak-fill" viewbox="0 0 16 16"><path d="M8.931.586 7 3l1.5 4-2 3L8 15C22.534 5.396 13.757-2.21 8.931.586ZM7.358.77 5.5 3 7 7l-1.5 3 1.815 4.537C-6.533 4.96 2.685-2.467 7.358.77Z"></path></svg>
+            </div>
+            <h3>Page not found...</h3>
 
-        <div id="comunity" class="mb-5">
-            {{{ body }}}
+            <p> Url: <strong class="text-red">{{url}}</strong></p>
+            <p>If you were searching a post or a user, please, <strong class="text-red">report it to the administration.</strong> We'll solve this</p>
         </div>
     </div>
 
