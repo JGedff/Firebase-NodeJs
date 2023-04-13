@@ -1,0 +1,81 @@
+<body>
+    <div id="editButtons">
+        <a href="/users/{{admin.id}}/edit" class="btn btn-success m-1">Edit Users</a>
+        <a href="/posts/{{admin.id}}/edit" class="btn btn-primary m-1">Edit Posts</a>
+        <a href="/comments/{{admin.id}}/edit" class="btn btn-info m-1">Edit Comments</a>
+        <a href="/categories/{{admin.id}}/edit" class="btn btn-danger m-1">Edit Categories</a>
+        <a href="/dates/{{admin.id}}/edit" class="btn btn-light m-1">Edit Dates</a>
+    </div>
+
+    <div id="seeButtons">
+        <h1>Administration</h1>
+        <p>Lets see how everything goes</p>
+        <a href="/users/{{admin.id}}" class="btn btn-success m-1">See all users</a>
+        <a href="/posts/{{admin.id}}" class="btn btn-primary m-1">See all posts</a>
+        <a href="/comments/{{admin.id}}" class="btn btn-info m-1">See all comments</a>
+        <a href="/categories/{{admin.id}}" class="btn btn-danger m-1">See all categories</a>
+        <a href="/dates/{{admin.id}}" class="btn btn-light m-1">See all dates</a>
+        <div id="searcher">
+            <a href="/search/{{admin.id}}" class="btn btn-light m-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewbox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+                Search
+            </a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <form action="create/send" class="m-2 w-50">
+            <div class="mt-3">
+                <label for="content">Write the content of the comment</label>
+                <input type="text" name="content" id="content" class="form-control" required="true">
+            </div>
+            <div class="mt-3">
+                <label for="post">Write the id of the post asociated</label>
+                <select name="post" class="form-control" id="post">
+                    {{#each post}}
+                    <option value="{{id}}">{{id}} <strong>{{title}}</strong></option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="mt-3">
+                <label for="userId">Write the id of the user that made the comment</label>
+                <select name="userId" class="form-control" id="userId">
+                    {{#each user}}
+                    <option value="{{id}}">{{id}} <strong>{{name}}</strong></option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="mt-3">
+                <label for="userName">Write the user name of the user that made comment</label>
+                <select name="userName" class="form-control" id="userName">
+                    {{#each user}}
+                    <option value="{{name}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="mt-3">
+                <label for="email">Write the email of the user that made the comment</label>
+                <select name="email" class="form-control" id="email">
+                    {{#each user}}
+                    <option value="{{email}}">{{email}}</option>
+                    {{/each}}
+                </select>
+            </div>
+
+            <h4 class="mt-5">Optional</h4>
+
+            <div class="mt-3">
+                <label for="id">Write the id of the comment</label>
+                <input type="text" name="id" id="id" class="form-control">
+            </div>
+            <div class="mt-3">
+                <label for="lilkes">Write how many likes does the comment have</label>
+                <input type="number" name="likes" id="likes" class="form-control" required="true">
+            </div>
+            <div class="mt-3">
+                <label for="dislikes">Write how many dislikes does the comment have</label>
+                <input type="number" name="dislikes" id="dislikes" class="form-control" required="true">
+            </div>
+            <button type="submit" class="btn btn-success mt-3"> Create the comment </button>
+        </form>
+    </div>
+</body>

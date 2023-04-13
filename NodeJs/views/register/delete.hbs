@@ -1,0 +1,21 @@
+<body onload="register()">
+    <div id="searcher">
+        <a href="/searchDashboard/{{user.id}}" class="btn btn-light m-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewbox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+            Search
+        </a>
+    </div>
+    <div id="warning" class="m-1">
+        <div class="d-flex align-items-center">
+            <img src="https://firebasestorage.googleapis.com/v0/b/pkmnut-b8812.appspot.com/o/htmlImg%2Fexclamation-triangle.svg?alt=media&token=f7116962-b132-4eb5-ad9b-1a37987cb21e" alt="Warning">
+            <h3>Warning</h3>
+        </div>
+        <hr>
+        <p>Are you sure that you want to delete your account?</p>
+        <p><strong>Once you delete your account, we will not be able to restore your publications, posts and user data.</strong></p>
+        <div>
+            <a href="/deleteuser/{{user.id}}" class="btn btn-danger p-3"> Yes </a>
+            <a href="/dashboard/{{user.id}}" class="btn btn-success p-3"> No </a>
+        </div>
+    </div>
+</body>

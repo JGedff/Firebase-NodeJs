@@ -1,0 +1,37 @@
+<body onload="register()">
+    <div id="searcher">
+        <a href="/searchDashboard/{{data.id}}" class="btn btn-light m-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewbox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+            Search
+        </a>
+    </div>
+    <a href="/dashboard/{{data.id}}" class="btn rounded btn-light m-1" id="goBack">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewbox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"></path></svg>
+        Dashboard
+    </a>
+    <div class="d-flex justify-content-center">
+        <form action="/dashboard/{{data.id}}/update" onsubmit="updateChecker(event)" class="m-3 w-50" id="formEditUser">
+            <div class="form-group m-2">
+                <label for="userEmail">Write your e-mail</label>
+                <input type="text" name="userEmail" class="form-control" id="userEmail">
+            </div>
+            <div class="form-group m-2">
+                <label for="userName">Write your user name</label>
+                <input type="text" name="userName" class="form-control" id="userName">
+            </div>
+            <div class="form-group m-2">
+                <label for="userDescription">Write a description for your user</label>
+                <input type="text" name="userDescription" class="form-control" id="userDescription">
+            </div>
+            <div class="form-group m-2">
+                <label for="passwd">Write your password</label>
+                <input type="password" name="passwd" class="form-control" id="passwd">
+            </div>
+            <div class="form-group m-2">
+                <label for="repeatPasswd">Repeat your password</label>
+                <input type="password" name="repeatPasswd" class="form-control" id="repeatPasswd">
+            </div>
+            <button type="submit" class="btn btn-primary m-2" id="update"> Update </button>
+        </form>
+    </div>
+</body>
