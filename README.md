@@ -14,6 +14,7 @@ You can also see, edit or delete others posts, comments or profiles.
 Although, you can create, edit or delete categories and dates, that they are used to organize the posts.
 
 To install all NodeJs packages you'll have to use the comand npm run install.
+
 To run the server you'll have to user the comand npm run start.
 
 # Before runing the service
