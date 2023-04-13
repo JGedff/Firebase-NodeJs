@@ -18,7 +18,7 @@ To run the server you'll have to user the comand npm run start.
 
 # Before runing the service
 
-* The folde public is there without nothing, but if you delete that folder, nothing will work.
+* The folder public have 3 documents. Each one will have to be in the folder of their extension. Ex: style.css in the folder css. DO NOT delete the folder public. It will crash if you delete it.
 
 * In your firebase storage, you'll have to create 4 folders:
   * css:
@@ -30,12 +30,8 @@ To run the server you'll have to user the comand npm run start.
   * profileImg:
     * There is where the images that people put in their profile will save
 
-* In the layouts you'll find CSS TOCKEN and JAVASCRIPT TOCKEN. There, you'll have to put the css and the javascript url once you upload it into our firebase.
+* Once you have uploaded the files, you'll have to change the url route to the style.css, javascript.js, register.css, and all the links to files, so it will connect to your firebase.
 
 * In the firebaseKey.json, you'll have to put there the firebase SDK information.
 
 * Also, in the config.js, you'll have to put your database URL and in the storageBucket, you'll have to put your firebase ID.
-
-* In a lot of documents, you'll see YOUR FIREBASE APP. You'll have to change that for your firebase ID
-
-* You'll also see some DEFAULT PROFILE IMAGE. The image or url of that image will be the image that all user will have if they don't put any image in the file input.
