@@ -1,5 +1,7 @@
 # Firebase-NodeJs
 
+# THIS PROJECT IS AFECTED BY THE VULNERABILITY OF PROTOBUFJS CVE-2023-36665 PLEASE UPDATE IT TO A HIGHER VERSION THAN 7.2.4
+
 Hello, this is a web made with HTML, CSS and JavaScript for the front-end and NodeJs and express handlebars for the server routing.
 
 In this release, as a unlogged user you can see all information of the Who are we, posts and comments.
